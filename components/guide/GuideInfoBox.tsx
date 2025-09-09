@@ -9,6 +9,34 @@ export function GuideInfoBox(props: { children: ReactNode }) {
       <div className="text-4xl text-center">
         <Logo />
       </div>
+      <div>
+         <a
+         href="https://pump.fun/coin/HHaxpNYVPKUJ2VLyR6JoEeWwJWdNBQBD678ckAfwpump"
+      className="relative group overflow-hidden px-6 py-3 rounded-lg font-semibold text-white 
+                 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 
+                 shadow-lg shadow-purple-800/40 
+                 hover:from-pink-500 hover:via-purple-600 hover:to-blue-500
+                 transition-all duration-300 ease-in-out
+                 flex items-center gap-3"
+    >
+      {/* Futuristic border glow effect */}
+      <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500 opacity-30 blur-lg group-hover:opacity-50 transition-all duration-300"></span>
+
+      {/* Foreground Content */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5 z-10"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 17l6-6-6-6M20 7h-9M20 17h-9" />
+      </svg>
+
+      <span className="z-10">Buy $EXAGI</span>
+    </a>
+      </div>
 
       <div className="text-sm max-w-[600px] mx-auto text-center">
         {props.children}
