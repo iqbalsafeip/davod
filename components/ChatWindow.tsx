@@ -61,6 +61,7 @@ export function ChatInput(props: {
   children?: ReactNode;
   className?: string;
   actions?: ReactNode;
+  isComingSoon?: boolean;
 }) {
   const disabled = props.loading && props.onStop == null;
   return (
@@ -90,15 +91,13 @@ export function ChatInput(props: {
 
           <div className="flex gap-2 self-end">
             {props.actions}
-            <Button type="submit" className="self-end" disabled={disabled}>
+            <Button type="submit" className="self-end" disabled={props.isComingSoon ? true : disabled}>
               {props.loading ? (
                 <span role="status" className="flex justify-center">
                   <LoaderCircle className="animate-spin" />
                   <span className="sr-only">Loading...</span>
                 </span>
-              ) : (
-                <span>Send</span>
-              )}
+              ) : (<span>{props.isComingSoon ? "Coming Soon" : "Send"}</span>)}
             </Button>
           </div>
         </div>
@@ -172,6 +171,7 @@ export function ChatWindow(props: {
   emoji?: string;
   showIngestForm?: boolean;
   showIntermediateStepsToggle?: boolean;
+  isComingSoon?: boolean;
 }) {
   const [showIntermediateSteps, setShowIntermediateSteps] = useState(
     !!props.showIntermediateStepsToggle,
@@ -310,6 +310,7 @@ export function ChatWindow(props: {
           onSubmit={sendMessage}
           loading={chat.isLoading || intermediateStepsLoading}
           placeholder={props.placeholder ?? "What's it like to be a pirate?"}
+          isComingSoon={props.isComingSoon}
         >
           {props.showIngestForm && (
             <Dialog>
@@ -317,7 +318,7 @@ export function ChatWindow(props: {
                 <Button
                   variant="ghost"
                   className="pl-2 pr-3 -ml-2"
-                  disabled={chat.messages.length !== 0}
+                  disabled={props.isComingSoon ? true : chat.messages.length !== 0}
                 >
                   <Paperclip className="size-4" />
                   <span>Upload document</span>

@@ -5,24 +5,7 @@ export default function AgentsPage() {
   const InfoCard = (
     <GuideInfoBox>
       <ul>
-        <li className="hidden text-l md:block">
-          🔗
-          <span className="ml-2">
-            This template showcases how to perform retrieval with a{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
-            </a>{" "}
-            chain and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
-            </a>{" "}
-            in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
-              Next.js
-            </a>{" "}
-            project.
-          </span>
-        </li>
+        
         <li className="hidden text-l md:block">
           🪜
           <span className="ml-2">The chain works in two steps:</span>
@@ -44,13 +27,7 @@ export default function AgentsPage() {
             </li>
           </ul>
         </li>
-        <li className="hidden text-l md:block">
-          💻
-          <span className="ml-2">
-            You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/retrieval/route.ts</code>.
-          </span>
-        </li>
+      
         <li>
           🐶
           <span className="ml-2">
@@ -58,20 +35,7 @@ export default function AgentsPage() {
             can change the prompt to whatever you want!
           </span>
         </li>
-        <li className="text-l">
-          🎨
-          <span className="ml-2">
-            The main frontend logic is found in{" "}
-            <code>app/retrieval/page.tsx</code>.
-          </span>
-        </li>
-        <li className="hidden text-l md:block">
-          🔱
-          <span className="ml-2">
-            Before running this example on your own, you&apos;ll first need to
-            set up a Supabase vector store. See the README for more details.
-          </span>
-        </li>
+       
         <li className="text-l">
           👇
           <span className="ml-2">
@@ -87,6 +51,7 @@ export default function AgentsPage() {
       endpoint="api/chat/retrieval"
       emptyStateComponent={InfoCard}
       showIngestForm={true}
+      isComingSoon={true}
       placeholder={
         'I\'ve got a nose for finding the right documents! Ask, "What is a document loader?"'
       }

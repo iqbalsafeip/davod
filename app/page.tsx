@@ -23,13 +23,7 @@ export default function Home() {
             project.
           </span>
         </li>
-        <li className="hidden text-l md:block">
-          💻
-          <span className="ml-2">
-            You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/route.ts</code>.
-          </span>
-        </li>
+      
         <li>
           🏴‍☠️
           <span className="ml-2">
@@ -37,12 +31,7 @@ export default function Home() {
             the prompt to whatever you want!
           </span>
         </li>
-        <li className="hidden text-l md:block">
-          🎨
-          <span className="ml-2">
-            The main frontend logic is found in <code>app/page.tsx</code>.
-          </span>
-        </li>
+      
         <li className="text-l">
           👇
           <span className="ml-2">
