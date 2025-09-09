@@ -48,6 +48,8 @@ export default function RootLayout({
                   </ActiveLink>
                   <ActiveLink href="/agents">WWW EXAGI Agents</ActiveLink>
                   <ActiveLink href="/retrieval">Main EXAGI Agents</ActiveLink>
+                  {/* <ActiveLink href="/about">About</ActiveLink>
+                  <ActiveLink href="/terms-condition">Terms And Condition</ActiveLink> */}
                 
                 </nav>
               </div>
@@ -68,9 +70,36 @@ export default function RootLayout({
               <div className="absolute inset-0">{children}</div>
             </div>
           </div>
+          <Footer />
           <Toaster />
         </NuqsAdapter>
       </body>
     </html>
   );
 }
+
+import React from "react";
+import Link from "next/link";
+// Jika pakai Next.js, ganti dengan: import Link from "next/link";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-100 text-gray-600 border-t border-gray-200 mt-12">
+      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm mb-4 md:mb-0 text-center md:text-left">
+          © {new Date().getFullYear()} EXAGI Team. All rights reserved.
+        </p>
+
+        <div className="flex space-x-6 text-sm font-medium">
+          <Link href="/about" className="hover:text-gray-900 transition">
+            About
+          </Link>
+          <Link href="/terms" className="hover:text-gray-900 transition">
+            Terms & Conditions
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
