@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 const Logo = () => (
-  <Image src={"/images/logo_agent.png"} alt="logo" width={100} height={60} className="" />
+  <Image src={"/images/logo_agent.png"} alt="logo" width={150} height={60} className="" />
 );
 export function GuideInfoBox(props: { children: ReactNode }) {
   return (
@@ -11,7 +11,7 @@ export function GuideInfoBox(props: { children: ReactNode }) {
       </div>
       <div>
          <a
-         href="https://pump.fun/coin/HHaxpNYVPKUJ2VLyR6JoEeWwJWdNBQBD678ckAfwpump"
+         href="#"
       className="relative group overflow-hidden px-6 py-3 rounded-lg font-semibold text-white 
                  bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 
                  shadow-lg shadow-purple-800/40 
@@ -34,7 +34,7 @@ export function GuideInfoBox(props: { children: ReactNode }) {
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 17l6-6-6-6M20 7h-9M20 17h-9" />
       </svg>
 
-      <span className="z-10">Buy $EXAGI</span>
+      <span className="z-10">Buy $KOMMIAI</span>
     </a>
       </div>
 

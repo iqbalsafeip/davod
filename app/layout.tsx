@@ -21,16 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>OnExagi</title>
+        <title>KOMMIAI</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         
-        <meta property="og:title" content="OnEXAGI" />
+        <meta property="og:title" content="KOMMIAI" />
        
       
       </head>
       <body className={publicSans.className}>
         <NuqsAdapter>
-          <div className="bg-secondary grid grid-rows-[auto,1fr] h-[100dvh]">
+          <div className="bg-indigo-950 text-white grid grid-rows-[auto,1fr] h-[100dvh]">
             <div className="grid grid-cols-[1fr,auto] gap-2 p-4">
               <div className="flex gap-4 flex-col md:flex-row md:items-center">
                 <a
@@ -42,12 +42,12 @@ export default function RootLayout({
                   <Logo />
                 </a>
                 <nav className="flex gap-1 flex-col md:flex-row">
-                  <ActiveLink href="/">Basic EXAGI Agent  (default)</ActiveLink>
+                  <ActiveLink href="/">Basic KOMMI Agent  (default)</ActiveLink>
                   <ActiveLink href="/structured_output">
-                    Structured EXAGI Agent 
+                    Structured KOMMI Agent 
                   </ActiveLink>
-                  <ActiveLink href="/agents">WWW EXAGI Agents</ActiveLink>
-                  <ActiveLink href="/retrieval">Main EXAGI Agents</ActiveLink>
+                  <ActiveLink href="/agents">WWW KOMMI Agent</ActiveLink>
+                  <ActiveLink href="/retrieval">Main KOMMI Agent</ActiveLink>
                   {/* <ActiveLink href="/about">About</ActiveLink>
                   <ActiveLink href="/terms-condition">Terms And Condition</ActiveLink> */}
                 
@@ -66,7 +66,7 @@ export default function RootLayout({
                 </Button> */}
               </div>
             </div>
-            <div className="bg-background mx-4 relative grid rounded-t-2xl border border-input border-b-0">
+            <div className="bg-background mx-4 relative grid text-black rounded-t-2xl border border-input border-b-0">
               <div className="absolute inset-0">{children}</div>
             </div>
           </div>
@@ -87,7 +87,7 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-600 border-t border-gray-200 mt-12">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm mb-4 md:mb-0 text-center md:text-left">
-          © {new Date().getFullYear()} EXAGI Team. All rights reserved.
+          © {new Date().getFullYear()} KOMMI Team. All rights reserved.
         </p>
 
         <div className="flex space-x-6 text-sm font-medium">
