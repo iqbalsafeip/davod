@@ -30,7 +30,7 @@ export default function RootLayout({
       </head>
       <body className={publicSans.className}>
         <NuqsAdapter>
-          <div className="bg-indigo-950 text-white grid grid-rows-[auto,1fr] h-[100dvh]">
+          <div className="bg-indigo-950 grid grid-rows-[auto,1fr] h-[100dvh]">
             <div className="grid grid-cols-[1fr,auto] gap-2 p-4">
               <div className="flex gap-4 flex-col md:flex-row md:items-center">
                 <a
@@ -41,7 +41,7 @@ export default function RootLayout({
                 >
                   <Logo />
                 </a>
-                <nav className="flex gap-1 flex-col md:flex-row">
+                <nav className="flex gap-1 flex-col md:flex-row text-white">
                   <ActiveLink href="/">Basic KOMMI Agent  (default)</ActiveLink>
                   <ActiveLink href="/structured_output">
                     Structured KOMMI Agent 
@@ -66,7 +66,7 @@ export default function RootLayout({
                 </Button> */}
               </div>
             </div>
-            <div className="bg-background mx-4 relative grid text-black rounded-t-2xl border border-input border-b-0">
+            <div className="bg-background mx-4 relative grid rounded-t-2xl border border-input border-b-0">
               <div className="absolute inset-0">{children}</div>
             </div>
           </div>
