@@ -42,12 +42,12 @@ export default function RootLayout({
                   <Logo />
                 </a>
                 <nav className="flex gap-1 flex-col md:flex-row text-white">
-                  <ActiveLink href="/">Basic KOMMI Agent  (default)</ActiveLink>
+                  <ActiveLink href="/">Basic SyncDoc Agent  (default)</ActiveLink>
                   <ActiveLink href="/structured_output">
-                    Structured KOMMI Agent 
+                    Structured SyncDoc Agent 
                   </ActiveLink>
-                  <ActiveLink href="/agents">WWW KOMMI Agent</ActiveLink>
-                  <ActiveLink href="/retrieval">Main KOMMI Agent</ActiveLink>
+                  <ActiveLink href="/agents">WWW SyncDoc Agent</ActiveLink>
+                  <ActiveLink href="/retrieval">Main SyncDoc Agent</ActiveLink>
                   {/* <ActiveLink href="/about">About</ActiveLink>
                   <ActiveLink href="/terms-condition">Terms And Condition</ActiveLink> */}
                 
@@ -87,7 +87,7 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-600 border-t border-gray-200 mt-12">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm mb-4 md:mb-0 text-center md:text-left">
-          © {new Date().getFullYear()} KOMMI Team. All rights reserved.
+          © {new Date().getFullYear()} SyncDoc Team. All rights reserved.
         </p>
 
         <div className="flex items-center space-x-6 text-sm font-medium">
