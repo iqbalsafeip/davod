@@ -80,7 +80,7 @@ export default function RootLayout({
 
 import React from "react";
 import Link from "next/link";
-// Jika pakai Next.js, ganti dengan: import Link from "next/link";
+import { Twitter } from "lucide-react"; // ✅ ikon X (Twitter)
 
 const Footer = () => {
   return (
@@ -90,12 +90,23 @@ const Footer = () => {
           © {new Date().getFullYear()} KOMMI Team. All rights reserved.
         </p>
 
-        <div className="flex space-x-6 text-sm font-medium">
+        <div className="flex items-center space-x-6 text-sm font-medium">
+          {/* Navigasi halaman */}
           <Link href="/about" className="hover:text-gray-900 transition">
             About
           </Link>
           <Link href="/terms-condition" className="hover:text-gray-900 transition">
             Terms & Conditions
+          </Link>
+
+          {/* Ikon X / Twitter */}
+          <Link
+            href="https://x.com/kommiai" // 🔗 ganti dengan URL akun X kamu
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-900 transition flex items-center"
+          >
+            <Twitter className="w-5 h-5" />
           </Link>
         </div>
       </div>
