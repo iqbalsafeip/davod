@@ -21,16 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>KOMMIAI</title>
+        <title>SyncDoc</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         
-        <meta property="og:title" content="KOMMIAI" />
+        <meta property="og:title" content="SyncDoc" />
        
       
       </head>
       <body className={publicSans.className}>
         <NuqsAdapter>
-          <div className="bg-indigo-950 grid grid-rows-[auto,1fr] h-[100dvh]">
+          <div className="bg-teal-950 grid grid-rows-[auto,1fr] h-[100dvh]">
             <div className="grid grid-cols-[1fr,auto] gap-2 p-4">
               <div className="flex gap-4 flex-col md:flex-row md:items-center">
                 <a
@@ -101,7 +101,7 @@ const Footer = () => {
 
           {/* Ikon X / Twitter */}
           <Link
-            href="https://x.com/kommiai" // 🔗 ganti dengan URL akun X kamu
+            href="https://x.com/SyncDoc" // 🔗 ganti dengan URL akun X kamu
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition flex items-center"

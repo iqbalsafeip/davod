@@ -34,7 +34,7 @@ export function GuideInfoBox(props: { children: ReactNode }) {
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 17l6-6-6-6M20 7h-9M20 17h-9" />
       </svg>
 
-      <span className="z-10">Buy $KOMMIAI</span>
+      <span className="z-10">Buy $SYNCDOC</span>
     </a>
       </div>
 
