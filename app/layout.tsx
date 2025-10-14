@@ -101,7 +101,7 @@ const Footer = () => {
 
           {/* Ikon X / Twitter */}
           <Link
-            href="https://x.com/SyncDoc" // 🔗 ganti dengan URL akun X kamu
+            href="https://x.com/SyncDocAgent" // 🔗 ganti dengan URL akun X kamu
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition flex items-center"
