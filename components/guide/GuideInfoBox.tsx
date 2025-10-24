@@ -11,7 +11,7 @@ export function GuideInfoBox(props: { children: ReactNode }) {
       </div>
       <div>
          <a
-         href=""
+         href="https://pump.fun/coin/CSVeT5C5e2cPj2ZeCHiUy7EpmaB46DsDGjNA24PKpump"
       className="relative group overflow-hidden px-6 py-3 rounded-lg font-semibold text-white 
                  bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 
                  shadow-lg shadow-purple-800/40 
