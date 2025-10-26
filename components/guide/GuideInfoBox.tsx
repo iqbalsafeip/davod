@@ -19,6 +19,9 @@ export function GuideInfoBox(props: { children: ReactNode }) {
           <Link href="/terms-condition" className="hover:text-gray-900 transition">
             Terms & Conditions
           </Link>
+          <Link href="/FILESENSE.pdf" className="hover:text-gray-900 transition">
+            Whitepaper
+          </Link>
 
           {/* Ikon X / Twitter */}
           <Link
