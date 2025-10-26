@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Public_Sans } from "next/font/google";
-import { ActiveLink, ActiveSelectMenu } from "@/components/Navbar";
+import {  ActiveSelectMenu } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Database, FileText, GithubIcon, Globe, Layers, ShoppingCart } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
