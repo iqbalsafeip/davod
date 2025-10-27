@@ -70,7 +70,7 @@ export default function RootLayout({
                 </a>
                 <nav className="flex gap-1 flex-col md:flex-row text-white items-center gap-2" >
                   <a
-                    href={"https://pump.fun/coin/A7yVAJHMCCCi9FdbTpGoLCRbEZDSb7VhU7SH88W2pump"}
+                    href={"#"}
                     target={"_blank"}
                     className={`
         inline-flex items-center justify-center gap-2
