@@ -6,7 +6,7 @@ export default function Home() {
     <GuideInfoBox>
       <ul>
        
-      
+      {/* davod */}
         <li>
           x402
           <span className="ml-2">
