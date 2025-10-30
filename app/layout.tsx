@@ -46,26 +46,19 @@ export default function RootLayout({
         className={`font-mono text-green-400 bg-black min-h-screen tracking-wide`}
       >
         <NuqsAdapter>
-          <div className="grid grid-rows-[auto,1fr,auto] min-h-[100dvh]">
+          <MarketCap />
+          <Tracker />
+
+          <div className="grid grid-rows-[auto,1fr,auto] min-h-[100dvh] mt-15">
             {/* HEADER */}
             <div className="border-b border-green-500/30 p-4 flex justify-between items-center bg-black">
               <div className="flex items-center gap-3">
                 <Logo />
-                <span className="text-green-500 uppercase text-sm">
-                  [ Three agents. One consciousness. Infinite evolution. ]
-                </span>
+                
               </div>
 
               <nav className="flex items-center gap-3">
-                <a
-                  href="#"
-                  target="_blank"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-green-500/40 
-                             text-green-300 hover:text-black hover:bg-green-400/90 transition-all duration-200"
-                >
-                  <ShoppingCart className="w-4 h-4" />
-                  <span>Buy $DAVOD</span>
-                </a>
+                
 
                 <ActiveSelectMenu options={options} />
               </nav>
@@ -95,6 +88,8 @@ export default function RootLayout({
 
 import Link from "next/link";
 import { Twitter } from "lucide-react";
+import Tracker from "@/components/Tracker";
+import MarketCap from "@/components/Marketcap";
 
 const Footer = () => {
   return (
