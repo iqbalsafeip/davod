@@ -1,16 +1,13 @@
+
 import "./globals.css";
-import { Public_Sans } from "next/font/google";
-import {  ActiveSelectMenu } from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
-import { Database, FileText, GithubIcon, Globe, Layers, ShoppingCart } from "lucide-react";
+import { ActiveSelectMenu } from "@/components/Navbar";
+import { ShoppingCart, FileText, Layers, Globe } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import Image from "next/image";
 
-const publicSans = Public_Sans({ subsets: ["latin"] });
-
 const Logo = () => (
-  <Image src={"/images/logo.png"} alt="logo" width={140} height={80} className="" />
+  <Image src="/images/logo.png" alt="logo" width={140} height={80} />
 );
 
 export default function RootLayout({
@@ -18,102 +15,76 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-
-  // 🧭 List menu options
   const options = [
     {
-      label: "Basic FILESENSE Agent (default)",
+      label: "x402 Agent (default)",
       href: "/",
-      icon: <FileText className="w-4 h-4" />,
+      icon: <FileText className="w-4 h-4 text-green-400" />,
     },
     {
-      label: "Structured FILESENSE Agent",
+      label: "x403 Agent",
       href: "/structured_output",
-      icon: <Layers className="w-4 h-4" />,
+      icon: <Layers className="w-4 h-4 text-green-400" />,
     },
     {
-      label: "WWW FILESENSE Agent",
+      label: "x404 Agent",
       href: "/agents",
-      icon: <Globe className="w-4 h-4" />,
-    },
-    {
-      label: "Main FILESENSE Agent",
-      href: "/retrieval",
-      icon: <Database className="w-4 h-4" />,
+      icon: <Globe className="w-4 h-4 text-green-400" />,
     },
   ];
-  ;
+
 
   return (
     <html lang="en">
       <head>
-        <title>FILESENSE</title>
+        <title>— DAVOD</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
-
-        <meta property="og:title" content="FILESENSE" />
-
-
+        <meta property="og:title" content="— DAVOD" />
       </head>
-      <body className={publicSans.className}>
+
+      <body
+        className={`font-mono text-green-400 bg-black min-h-screen tracking-wide`}
+      >
         <NuqsAdapter>
-          <div className="bg-indigo-900 grid grid-rows-[auto,1fr] h-[100dvh]">
-            <div className="grid grid-cols-[1fr,auto] gap-2 p-4">
-              <div className="flex gap-4 flex-col md:flex-row md:items-center justify-between">
+          <div className="grid grid-rows-[auto,1fr,auto] min-h-[100dvh]">
+            {/* HEADER */}
+            <div className="border-b border-green-500/30 p-4 flex justify-between items-center bg-black">
+              <div className="flex items-center gap-3">
+                <Logo />
+                <span className="text-green-500 uppercase text-sm">
+                  [ Three agents. One consciousness. Infinite evolution. ]
+                </span>
+              </div>
+
+              <nav className="flex items-center gap-3">
                 <a
-                  href="/"
-                  rel="noopener noreferrer"
+                  href="#"
                   target="_blank"
-                  className="flex items-center gap-2"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-green-500/40 
+                             text-green-300 hover:text-black hover:bg-green-400/90 transition-all duration-200"
                 >
-                  <Logo />
+                  <ShoppingCart className="w-4 h-4" />
+                  <span>Buy $DAVOD</span>
                 </a>
-                <nav className="flex gap-1 flex-col md:flex-row text-white items-center gap-2" >
-                  <a
-                    href={"https://pump.fun/coin/9Yx5QvPiHLHSmyWHM6JUfvGGhTdaPDnaFwmigu8Spump"}
-                    target={"_blank"}
-                    className={`
-        inline-flex items-center justify-center gap-2
-        px-6 py-3 rounded-2xl font-semibold text-sm tracking-wide
-        text-white bg-teal-700 hover:bg-teal-600
-        shadow-md hover:shadow-lg active:scale-95
-        transition-all duration-300
-      `}
-                  >
-                    <ShoppingCart className="w-4 h-4" />
-                    <span>Buy $FILESENSE</span>
-                  </a>
-                  <ActiveSelectMenu
-                    options={options}
-                  />
 
-                  {/* <ActiveLink href="/">Basic FILESENSE Agent  (default)</ActiveLink>
-                    <ActiveLink href="/structured_output">
-                      Structured FILESENSE Agent
-                    </ActiveLink>
-                    <ActiveLink href="/agents">WWW FILESENSE Agent</ActiveLink>
-                    <ActiveLink href="/retrieval">Main FILESENSE Agent</ActiveLink> */}
-                  {/* <ActiveLink href="/about">About</ActiveLink>
-                  <ActiveLink href="/terms-condition">Terms And Condition</ActiveLink> */}
-
-                </nav>
-              </div>
-
-              <div className="flex justify-center">
-                {/* <Button asChild variant="outline" size="default">
-                  <a
-                    href="https://github.com/langchain-ai/langchain-nextjs-template"
-                    target="_blank"
-                  >
-                    <GithubIcon className="size-3" />
-                    <span>Open in GitHub</span>
-                  </a>
-                </Button> */}
-              </div>
+                <ActiveSelectMenu options={options} />
+              </nav>
             </div>
-            <div className="bg-background mx-4 relative grid rounded-t-2xl border border-input border-b-0">
-              <div className="absolute inset-0">{children}</div>
-            </div>
+
+            {/* MAIN */}
+            <main
+              className="bg-black border-x border-green-500/20 relative overflow-hidden flex-1"
+              style={{
+                boxShadow: "inset 0 0 20px rgba(0,255,100,0.1)",
+              }}
+            >
+              {/* background scanline */}
+              <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(0,255,0,0.05)_1px,transparent_1px)] bg-[length:100%_2px] opacity-50" />
+              <div className="">{children}</div>
+            </main>
+
+            {/* FOOTER */}
+            <Footer />
           </div>
           <Toaster />
         </NuqsAdapter>
@@ -122,35 +93,26 @@ export default function RootLayout({
   );
 }
 
-import React from "react";
 import Link from "next/link";
-import { Twitter } from "lucide-react"; // ✅ ikon X (Twitter)
+import { Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-600 border-t border-gray-200 mt-12">
-      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-sm mb-4 md:mb-0 text-center md:text-left">
-          © {new Date().getFullYear()} FILESENSE Team. All rights reserved.
+    <footer className="bg-black border-t border-green-500/30 text-green-400 text-xs md:text-sm">
+      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+        <p className="tracking-widest text-center md:text-left">
+          © {new Date().getFullYear()}/DAVOD Teams
         </p>
 
-        <div className="flex items-center space-x-6 text-sm font-medium">
-          {/* Navigasi halaman */}
-          <Link href="/about" className="hover:text-gray-900 transition">
-            About
-          </Link>
-          <Link href="/terms-condition" className="hover:text-gray-900 transition">
-            Terms & Conditions
-          </Link>
-
-          {/* Ikon X / Twitter */}
+        <div className="flex items-center gap-6">
           <Link
-            href="https://x.com/FILESENSEAgent" // 🔗 ganti dengan URL akun X kamu
+            href="https://x.com/davodagents"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-900 transition flex items-center"
+            className="hover:text-green-300 transition flex items-center gap-2"
           >
             <Twitter className="w-5 h-5" />
+            <span className="hidden md:inline">/DAVOD Agents</span>
           </Link>
         </div>
       </div>

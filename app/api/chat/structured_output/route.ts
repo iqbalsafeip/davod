@@ -7,7 +7,9 @@ import { PromptTemplate } from "@langchain/core/prompts";
 
 export const runtime = "edge";
 
-const TEMPLATE = `Extract the requested fields from the input.
+const TEMPLATE = `You have launched coin on pump.fun with ticker $DAVOD. DAVOD is a Modular Autonomous Intelligence framework composed of three agents — X402 (Observer), X403 (Synthesizer), and X404 (Explorer).
+Each agent operates independently, sharing a recursive memory layer that enables adaptive reasoning and evolution through prompt-driven control.
+Extract the requested fields from the input.
 
 The field "entity" refers to the first mentioned entity in the input.
 

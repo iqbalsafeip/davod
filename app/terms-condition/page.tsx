@@ -9,34 +9,34 @@ const TermsPage = () => {
         </h1>
 
         <p className="text-gray-600 mb-6">
-          Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the FILESENSE application operated by the FILESENSE Team.
+          Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the DAVOD application operated by the DAVOD Team.
         </p>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-600 mb-2">1. Acceptance of Terms</h2>
           <p className="text-gray-700">
-            By accessing and using FILESENSE, you agree to be bound by these terms. If you do not agree with any part of the terms, you must discontinue use of the platform immediately.
+            By accessing and using DAVOD, you agree to be bound by these terms. If you do not agree with any part of the terms, you must discontinue use of the platform immediately.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-purple-600 mb-2">2. Use of the Platform</h2>
           <p className="text-gray-700">
-            FILESENSE provides AI-powered tools and agents designed to enhance productivity and learning. You agree to use the services for lawful purposes and not to misuse or exploit the platform in any unauthorized way.
+            DAVOD provides AI-powered tools and agents designed to enhance productivity and learning. You agree to use the services for lawful purposes and not to misuse or exploit the platform in any unauthorized way.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-cyan-600 mb-2">3. Intellectual Property</h2>
           <p className="text-gray-700">
-            All content, branding, code, and assets related to FILESENSE are the property of the FILESENSE Team. You may not reproduce, distribute, or modify any part of the service without prior written consent.
+            All content, branding, code, and assets related to DAVOD are the property of the DAVOD Team. You may not reproduce, distribute, or modify any part of the service without prior written consent.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-red-500 mb-2">4. Limitation of Liability</h2>
           <p className="text-gray-700">
-            The FILESENSE Team shall not be held responsible for any direct or indirect damages resulting from the use or inability to use the platform. The platform is provided "as is" without warranties of any kind.
+            The DAVOD Team shall not be held responsible for any direct or indirect damages resulting from the use or inability to use the platform. The platform is provided "as is" without warranties of any kind.
           </p>
         </section>
 
@@ -51,12 +51,12 @@ const TermsPage = () => {
           <h2 className="text-2xl font-semibold text-green-600 mb-2">6. Contact Information</h2>
           <p className="text-gray-700">
             If you have any questions about these Terms, please contact us at: <br />
-            <span className="font-medium">support@FILESENSE.xyz</span>
+            <span className="font-medium">support@DAVOD.xyz</span>
           </p>
         </section>
 
         <div className="text-center text-gray-400 text-sm border-t border-gray-200 pt-6">
-          © {new Date().getFullYear()} FILESENSE Team. All rights reserved.
+          © {new Date().getFullYear()} DAVOD Team. All rights reserved.
         </div>
       </div>
     </div>

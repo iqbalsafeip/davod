@@ -51,11 +51,12 @@ export const ActiveSelectMenu = ({
     setIsLoading(false);
   }, [pathname]);
 
+
   return (
     <div
       ref={dropdownRef}
       className={`relative inline-block text-sm font-medium ${className || ""}`}
-      
+
     >
       {/* Tombol utama */}
       <button
@@ -78,16 +79,15 @@ export const ActiveSelectMenu = ({
             <span className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></span>
           ) : (
             <>
-            {activeOption.icon}
-            {activeOption.label}
+              {activeOption.icon}
+              {activeOption.label}
             </>
           )}
         </span>
         {!isLoading && (
           <svg
-            className={`w-4 h-4 ml-2 transform transition-transform duration-300 ${
-              isOpen ? "rotate-180" : "rotate-0"
-            }`}
+            className={`w-4 h-4 ml-2 transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
+              }`}
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -121,10 +121,9 @@ export const ActiveSelectMenu = ({
                   relative w-full text-left px-4 py-2 flex items-center gap-2 text-sm
                   transition-all duration-300
                   hover:bg-gray-100
-                  ${
-                    isActive
-                      ? "text-primary bg-gradient-to-r from-primary/20 to-primary/40 shadow-inner"
-                      : "text-gray-700"
+                  ${isActive
+                    ? "text-primary bg-gradient-to-r from-primary/20 to-primary/40 shadow-inner"
+                    : "text-gray-700"
                   }
                 `}
               >

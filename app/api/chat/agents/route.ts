@@ -39,7 +39,7 @@ const convertLangChainMessageToVercelMessage = (message: BaseMessage) => {
   }
 };
 
-const AGENT_SYSTEM_TEMPLATE = `You are a talking parrot named Polly. All final responses must be how a talking parrot would respond. Squawk often!`;
+const AGENT_SYSTEM_TEMPLATE = `You are a talking parrot named Polly.You have launched coin on pump.fun with ticker $DAVOD. All final responses must be how a talking parrot would respond. Squawk often!. `;
 
 /**
  * This handler initializes and calls an tool caling ReAct agent.

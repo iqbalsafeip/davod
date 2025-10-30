@@ -8,9 +8,9 @@ export default function Home() {
        
       
         <li>
-          🏴‍☠️
+          x402
           <span className="ml-2">
-            By default, the bot is pretending to be a pirate, but you can change
+            By default, the x402 is pretending to be a pirate, but you can change
             the prompt to whatever you want!
           </span>
         </li>
@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴‍☠️"
-      placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+      emoji="x402"
+      placeholder="x402 is an LLM pretending to be a pirate! Ask me about the pirate life!"
       emptyStateComponent={InfoCard}
     />
   );

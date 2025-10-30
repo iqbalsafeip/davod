@@ -8,24 +8,19 @@ const Logo = () => (
 export function GuideInfoBox(props: { children: ReactNode }) {
   return (
     <div className="max-w-[768px] w-full overflow-hidden flex-col justify-center items-center gap-5 flex text-md my-16 mx-auto">
-      <div className="text-4xl text-center">
+      {/* <div className="text-4xl text-center">
         <Logo />
-      </div>
+      </div> */}
         <div className="flex items-center space-x-6 text-sm font-medium">
           {/* Navigasi halaman */}
-          <Link href="/about" className="hover:text-gray-900 transition">
-            About
-          </Link>
-          <Link href="/terms-condition" className="hover:text-gray-900 transition">
-            Terms & Conditions
-          </Link>
-          <Link href="/FILESENSE.pdf" className="hover:text-gray-900 transition">
+         
+          <Link href="/whitepaper.pdf" className="hover:text-gray-900 transition">
             Whitepaper
           </Link>
 
           {/* Ikon X / Twitter */}
           <Link
-            href="https://x.com/filesenseagents" // 🔗 ganti dengan URL akun X kamu
+            href="https://x.com/davodagents" // 🔗 ganti dengan URL akun X kamu
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition flex items-center"
