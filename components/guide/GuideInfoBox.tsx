@@ -29,7 +29,7 @@ export function GuideInfoBox(props: { children: ReactNode }) {
         
       </div>
 <a
-          href="#"
+          href="https://pump.fun/coin/7gLBph41BwACer5gv5NTwRyrqUX6AwPgqmrYHqFvpump"
           target="_blank"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-green-500/40 
                              text-green-300 hover:text-black hover:bg-green-400/90 transition-all duration-200"
